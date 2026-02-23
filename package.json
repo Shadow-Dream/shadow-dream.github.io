@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/auto-deploy.cjs",
+    "build": "node scripts/prepare-root.cjs && vite build && node scripts/auto-deploy.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
