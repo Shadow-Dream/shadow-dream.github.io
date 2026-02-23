@@ -34,3 +34,41 @@
 .page.is-ready .video-fade {
   opacity: 0;
 }
+
+.glass-layer {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 16, 0.25);
+  backdrop-filter: blur(var(--glass-blur, 8px)) saturate(1.1);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 8px)) saturate(1.1);
+  pointer-events: none;
+}
+
+.glass-controls {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-controls input[type='range'] {
+  width: min(240px, 40vw);
+}
+
+.glass-controls span {
+  font-variant-numeric: tabular-nums;
+  min-width: 44px;
+  text-align: right;
+}
