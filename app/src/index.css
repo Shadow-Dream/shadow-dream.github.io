@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: #1c1712;
-  background-color: #f6efe7;
+  background-color: #120d0c;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +17,7 @@
 
 body {
   margin: 0;
-  background: #f6efe7;
+  background: #120d0c;
 }
 
 a {
@@ -26,11 +25,10 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+button {
+  font-family: inherit;
 }
 
 ::selection {
-  background: rgba(214, 163, 93, 0.35);
+  background: rgba(124, 216, 255, 0.35);
 }
